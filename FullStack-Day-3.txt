@@ -1,0 +1,54 @@
+Day 3:
+=========
+
+1) Introduction to Sets
+================================
+A set in Python is an unordered collection of unique elements. It is mutable and defined using {} or the set() constructor. Sets automatically remove duplicates and are mainly used for membership tests and mathematical operations.
+
+Example:
+s = {1, 2, 3, 3}
+print(s)   # {1, 2, 3}
+
+
+2) Properties of Sets
+================================
+Unordered: No fixed index
+Mutable: Can add/remove elements
+Unique items: No duplicates
+Unindexed: Cannot access elements using indexes
+Dynamic: Can grow/shrink
+
+Example:
+s = {10, 20, 30}
+# s[0] ❌ Not allowed (no indexing)
+
+
+3) Set Operations
+===========================
+Python supports standard mathematical operations:
+Union: A | B or A.union(B)
+Intersection: A & B
+Difference: A - B
+Symmetric Difference: A ^ B
+
+Example:
+A = {1, 2, 3}
+B = {3, 4}
+print(A | B)   # {1,2,3,4}
+print(A & B)   # {3}
+
+
+4) Corresponding Set Methods
+=====================================
+Common built-in set methods:
+add() – Add element
+remove() / discard() – Remove element
+pop() – Remove random element
+clear() – Empty set
+update() – Add multiple values
+
+Example:
+s = {1, 2}
+s.add(3)
+s.update([4, 5])
+print(s)  # {1,2,3,4,5}
